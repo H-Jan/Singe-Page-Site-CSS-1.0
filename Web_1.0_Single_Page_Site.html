@@ -1,358 +1,408 @@
 <!DOCTYPE html>
 
-    <html>
+<html>
 
-        <head>
-            <title> Romanticism As a Whole</title>
-            <style>
-            body {
-				margin: 0 0.51rem 0 0;
-				font-family: 'Times New Roman', Times, serif;
-				background-color: whitesmoke;
-				line-height: 2;
-			}
+<head>
+    <title> Romanticism As a Whole</title>
+    <style>
+        body {
+            margin: 0 0.51rem 0 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: whitesmoke;
+            line-height: 2;
+        }
 
-			nav, main > section {
-				overflow: auto;
-			}
+        main>section,
+        main>footer {
+            min-height: 900px;
+            max-height: 1400px;
+        }
 
-			main > section, main > footer {
-				min-height: 150vh;
-			}
+        #nav {
+            min-height: 30px;
+            max-height: 84px;
+            justify-content: center;
+            align-items: baseline;
+            background-color: orange;
+            color: red;
+            display: flex;
+        }
 
-			#nav {
-				justify-content: center;
-				align-items: baseline;
-				padding: 2em;
-				background-color: orange;
-				color: red;
-				display: flex;
-			}
+        nav h1,
+        ul {
+            margin: 1
+        }
 
-			nav h1, ul {
-				margin: 1
-			}
+        nav a {
+            text-decoration: none;
+            color: aqua;
+        }
 
-			nav a {
-				text-decoration: none;
-				color:aqua;
-			}
+        nav ul {
+            display: flex;
+            list-style: square;
+        }
 
-			nav ul {
-				display: flex;
-				list-style: square;
-			}
+        nav ul a {
+            padding: 2em;
+            color: green;
+        }
 
-			nav ul a {
-				padding: 2em;
-				color: green;
-			}
+        nav ul a:hover {
+            color: yellow;
+        }
 
-			nav ul a:hover {
-				color:yellow;
-			}
+        #Movement {
+            background-color: black;
+            background-image: url(Wanderer_Above_The_Sea_Art.jpg);
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            font-size: 2em;
+            color: #fff;
+            height: 1300px;
+        }
 
-			#Movement {
-				background-color: black;
-				background-image: url(Wanderer_Above_The_Sea_Art.jpg);
-				background-size: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: right;
-				font-size: 2em;
-				color: #fff;
-			}
+        #Movement>div {
+            position: absolute;
+            left: 50px;
+            top: 500px;
+            bottom: 100px;
+        }
 
-			#Movement > div {
-				position: absolute;
-				left: 50px;
-				top: 500px;
-                bottom: 100px;
-			}
-
-			#Movement h2, #Movement p {
-				margin: 0;
-				text-shadow: 0 0 20px #000000;
-			}
-
-
-			/* Create some cards in this section */
-			#Art {
-				background-color: #26323f;
-			}
-
-			#Art ul {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				display: flex;
-				justify-content: center;
-			}
-
-			#Art > h2 {
-				margin: 1em;
-				font-size: 3em;
-				text-align: center;
-				color: #eee;
-			}
-
-			.card {
-				width: 400px;
-				margin: 1em;
-				background-color: #eee;
-				box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
-			}
-
-			.card img {
-				width: 100%;
-			}
-
-			.card h3 {
-				font-size: 2em;
-			}
-
-			.card h3, .card p {
-				margin: 1rem;
-			}
-
-			#Literature {
-				background-image: url(Bigger_Background_Literature.jpg);
-				display: flex;
-				justify-content: center;
-				align-items: right;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-				font-size: 1em;
-				color: lightgoldenrodyellow;
-				background-size: 100%;
-			}
-
-			#Literature > div {
-				background-color:rgba(255, 255, 255, 0.65);
-                margin: 1rem 1rem 1rem 1rem;
-                padding: 0.5em;
-                width: 75%;
-				max-width: 700px;
-			}
-
-			#Literature h2 {
-				font-size: 4em;
-				margin: 0 0 1rem 0;
-				text-align: center;
-			}
+        #Movement h2,
+        #Movement p {
+            margin: 0;
+            text-shadow: 0 0 20px #000000;
+            width: 95%;
+            text-align: justify;
+        }
 
 
-			/* Style this */
-			#Architecture {
-				background-color: #461c3b;
-				display: flex;
-				color: #fff;
-				background-image: url(images/sound-texture.jpg);
-				background-size: cover;
-			}
+        /* Create some cards in this section */
+        #Art {
+            background-color: #26323f;
+            padding-bottom: 50px;
+        }
 
-			#Architecture > div {
-				display: flex;
-				justify-content: center;
-				width: 75%;
-				margin: auto;
-			}
+        #Art ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-			#Architecture h2, #Architecture p {
-				margin: 0 0 1rem 0;
-			}
+        #Art>h2 {
+            margin: 0;
+            font-size: 3em;
+            text-align: center;
+            color: #eee;
+        }
 
-			#Architecture h2 {
-				font-size: 2em;
-			}
+        .card {
+            width: 400px;
+            margin: 1em;
+            background-color: #eee;
+            box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
+        }
 
-			#Architecture > div > div:nth-child(1) {
-				flex: 3;
-				margin: 0 2em 0 0;
-			}
+        .card img {
+            width: 100%;
+        }
 
-			#Architecture > div > div:nth-child(2) {
-				flex: 2;
-			}
+        .card h3 {
+            font-size: 2em;
+        }
 
-			#Architecture > div img {
-				width: 100%;
-				box-shadow:0 0 22px rgba(0, 0, 0, 0.44);
-			}
+        .card h3,
+        .card p {
+            margin: 1rem;
+        }
 
 
-			#contact {
-				background-color: #FF9500;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
+       #Literature {
+            background-image: url(Romanticism_Literature_Background.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1em;
+            color: lightgoldenrodyellow;
+            background-size: cover;
+       }
 
-			#contact > form {
-				display: flex;
-			}
 
-			#contact > form > div {
-				display: flex;
-				flex-direction: column;
-			}
+        #Literature>div {
+            margin: 1rem 1rem 100rem 1rem;
+            padding: 0.5em;
+            width: 84%;
+            max-width: 500px;
+            height: 1000px;
 
-			#contact label {
-				display: flex;
-				flex-direction: column;
-			}
+        }
 
-			label {
-				margin: 1em 0;
-			}
+        #Literature h2 {
+            font-size: 4em;
+            margin: 0 0 1rem 0;
+            text-align: center;
+        }
 
-			label span {
-				margin: 1em 0;
-			}
 
-			input, textarea {
-				border: 1px solid #000;
-				padding: 0.5em;
-				margin: 0 2em 0 0;
-				width: 20em;
-				font-size: 1em;
-			}
+        /* Style this */
+        #Architecture {
+            background-color: #461c3b;
+            display: flex;
+            color: #fff;
+            background-image: url(images/sound-texture.jpg);
+            background-size: cover;
+        }
 
-			textarea {
-				height: 9em;
-				margin: 0 0 0 0;
-			}
+        #Architecture>div {
+            display: flex;
+            justify-content: center;
+            width: 75%;
+            margin: auto;
+        }
 
-			form button {
-				width: auto;
-				font-size: 1em;
-				margin: 1em 0;
-				align-self: flex-end;
-				padding: 0.5em 1em;
-				background-color:rgb(0, 0, 0);
-				color: #fff;
-				border: none;
-			}
-		</style>
-	</head>
-	<body>
+        #Architecture h2,
+        #Architecture p {
+            margin: 0 0 1rem 0;
+        }
 
-		<main>
-			<nav id="nav">
-				<h1><a href="#">Romanticism</a></h1>
-				<ul>
-					<li><a href="#Movement">Movement</a></li>
-					<li><a href="#Art">Art</a></li>
-					<li><a href="#Literature">Literature</a></li>
-					<li><a href="#Architecture">Architecture</a></li>
-				</ul>
-			</nav>
-		
-			<section id="Movement">
-				<div>
-					<h2>Movement</h2>
-					<p>Romanticism is an artistic, literary, musical and intellectual movement of the 18th century. Known for 
-                        it's emphasis on individualism, glorification of the past, of nature, and classical emphasis, it's birth was
-                        reationary to the aristocratic, social, and political norms during the Age of Enlightenment. With particular
-                        emphasis on intense emotion as a means to aesthetic experience, it elevated art, literature, and architecture, 
-                        forever leaving an impact on Western cultures, influenxing liberalism, radicalism, conservatism, and nationalism.</p>
-				</div>
-			</section>
-		
-			<section id="Art">
-				<h2>Art</h2>
-				<ul>
-					<li class="card">
-						<img src="Liberty_Leading_The_People.jpg">
-						<h3>Liberty Leading The People</h3>
-						<p>Created by Eugene Delacroix in 1830, this painting commemorates the July Revolution of  1830 which toppled
-                            King Charles the Tenth of France. Depicted, a woman - liberty, who is depicted as a robut goddess of the people - leads 
-                            a varied group of people across various social classes pass the barricade of repression and the fallen bodies
-                            of those before them
-                        </p>
-					</li>
-					<li class="card">
-						<img src="Gustave_Corbet_Art.jpg">
-						<h3>The Desperate Man</h3>
-						<p>An oil on canvas self-portrait of Gustave Courbet, The Desperate Man serves as a literal expression of the artists experiences,
-                            contrasting his known reputation and social image, this portrait reflected his attitude to "...know in order to do, that was my idea...
-                            To be in a position to translate the customs, the ideas, the appearance of my time, according
-                            to my own estimation; to be not only a painter, but a man as well; in short, to create living art"
-                        </p>
-					</li>
-					<li class="card">
-						<img src="Jacques_Louis_David_Art.jpg">
-						<h3>The Oath of the Three Horatii</h3>
-						<p>Painted by Jacques-Louis David in 1784, this painting stands in testament to the values of the Romanticism era. 
-                            Showing a motionless portrait of men destined to death, yet maintaining honor, loyalty, and bravery, it reveals
-                            something deeper, more meaningful than depicted through a story or myth: emotion evoked beyond that expected 
-                            of a beautiful image, emotion to the nature of man, their humanity in times of inhumanity
-                        </p>
-					</li>
-				</ul>
-			</section>
-		
-			<section id="Literature">
-				<div>
-					<h2>Literature</h2>
-					<p>
-                        In literature, Romanticism found recurrent themes in the evocation or criticism of the past, the cult of "sensibility" with 
-                        its emphasis on women and children, the isolation of the artist or narrator, and respect for nature. Furthermore, several 
-                        romantic authors, such as Edgar Allan Poe and Nathaniel Hawthorne, based their writings on the supernatural/occult and human 
-                        psychology. Romanticism tended to regard satire as something unworthy of serious attention, a prejudice still influential today.
-                        The Romantic movement in literature was preceded by the Enlightenment and succeeded by Realism. <br>
-                        <br>
+        #Architecture h2 {
+            font-size: 2em;
+        }
 
-                        Some authors cite 16th-century poet Isabella di Morra as an early precursor of Romantic literature. Her lyrics covering 
-                        themes of isolation and loneliness, which reflected the tragic events of her life, are considered "an impressive prefigurement 
-                        of Romanticism",[43] differing from the Petrarchist fashion of the time based on the philosophy of love.</p>
-				</div>
-			</section>
-		
-			<section id="Architecture">
-				<div>
-					<div>
-						<h2>Architecture</h2>
-						<p>Romantic architecture appeared in the late 18th century in a reaction against the rigid forms of neoclassical architecture. 
-                            Romantic architecture reached its peak in the mid-19th century, and continued to appear until the end of the 19th century. 
-                            It was designed to evoke an emotional reaction, either respect for tradition or nostalgia for a bucolic past. It was 
-                            frequently inspired by the architecture of the Middle Ages, especially Gothic architecture, It was strongly influenced 
-                            by romanticism in literature, particularly the historical novels of Victor Hugo and Walter Scott. It sometimes moved 
-                            into the domain of eclecticism, with features assembled from different historic periods and regions of the world.</p>
-					</div>
-					<div>
-						<img src="images/ciani-2.jpg">
-					</div>
+        #Architecture>div>div:nth-child(1) {
+            flex: 3;
+            margin: 0 2em 0 0;
+        }
 
-				</div>
-				<figure>
-					<img>
-				</figure>
-			</section>
-		
-			<footer id="contact">
-				<h2>Contact Us</h2>
-				<form>
-					<div>
-						<label>
-							<span>Name</span>
-							<input type="text">
-						</label>
-			
-						<label>
-							<span>Email</span>
-							<input type="email">
-						</label>
-					</div>
-					<div>
-						<label>
-							<span>Message</span>
-							<textarea></textarea>
-						</label>
-						<button type="submit">Send</button>
-					</div>
-				</form>
-			</footer>
-		</main>
-	</body>
+        #Architecture>div>div:nth-child(2) {
+            flex: 2;
+        }
+
+        #Architecture>div img {
+            width: 100%;
+            box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
+        }
+
+
+        #contact {
+            background-color: #FF9500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contact>form {
+            display: flex;
+        }
+
+        #contact>form>div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact label {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 1em 0;
+        }
+
+        label span {
+            margin: 1em 0;
+        }
+
+        input,
+        textarea {
+            border: 1px solid #000;
+            padding: 0.5em;
+            margin: 0 2em 0 0;
+            width: 20em;
+            font-size: 1em;
+        }
+
+        textarea {
+            height: 9em;
+            margin: 0 0 0 0;
+        }
+
+        form button {
+            width: auto;
+            font-size: 1em;
+            margin: 1em 0;
+            align-self: flex-end;
+            padding: 0.5em 1em;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <nav id="nav">
+            <h1><a href="#">Romanticism</a></h1>
+            <ul>
+                <li><a href="#Movement">Movement</a></li>
+                <li><a href="#Art">Art</a></li>
+                <li><a href="#Literature">Literature</a></li>
+                <li><a href="#Architecture">Architecture</a></li>
+            </ul>
+        </nav>
+
+        <section id="Movement">
+            <div>
+                <h2>Movement</h2>
+                <p>Romanticism is an artistic, literary, musical and intellectual movement of the 18th century. Known
+                    for
+                    it's emphasis on individualism, glorification of the past, of nature, and classical emphasis, it's
+                    birth was
+                    reationary to the aristocratic, social, and political norms during the Age of Enlightenment. With
+                    particular
+                    emphasis on intense emotion as a means to aesthetic experience, it elevated art, literature, and
+                    architecture,
+                    forever leaving an impact on Western cultures, influenxing liberalism, radicalism, conservatism, and
+                    nationalism.</p>
+            </div>
+        </section>
+
+        <section id="Art">
+            <h2>Art</h2>
+            <ul>
+                <li class="card">
+                    <img src="Liberty_Leading_The_People.jpg">
+                    <h3>Liberty Leading The People</h3>
+                    <p>Created by Eugene Delacroix in 1830, this painting commemorates the July Revolution of 1830 which
+                        toppled
+                        King Charles the Tenth of France. Depicted, a woman - liberty, who is depicted as a robut
+                        goddess of the people - leads
+                        a varied group of people across various social classes pass the barricade of repression and the
+                        fallen bodies
+                        of those before them
+                    </p>
+                </li>
+                <li class="card">
+                    <img src="Gustave_Corbet_Art.jpg">
+                    <h3>The Desperate Man</h3>
+                    <p>An oil on canvas self-portrait of Gustave Courbet, The Desperate Man serves as a literal
+                        expression of the artists experiences,
+                        contrasting his known reputation and social image, this portrait reflected his attitude to
+                        "...know in order to do, that was my idea...
+                        To be in a position to translate the customs, the ideas, the appearance of my time, according
+                        to my own estimation; to be not only a painter, but a man as well; in short, to create living
+                        art"
+                    </p>
+                </li>
+                <li class="card">
+                    <img src="Jacques_Louis_David_Art.jpg">
+                    <h3>The Oath of the Three Horatii</h3>
+                    <p>Painted by Jacques-Louis David in 1784, this painting stands in testament to the values of the
+                        Romanticism era.
+                        Showing a motionless portrait of men destined to death, yet maintaining honor, loyalty, and
+                        bravery, it reveals
+                        something deeper, more meaningful than depicted through a story or myth: emotion evoked beyond
+                        that expected
+                        of a beautiful image, emotion to the nature of man, their humanity in times of inhumanity
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Literature">
+            <div>
+                <h2>Literature</h2>
+                <p>
+                    In literature, Romanticism found recurrent themes in the evocation or criticism of the past, the
+                    cult of "sensibility" with
+                    its emphasis on women and children, the isolation of the artist or narrator, and respect for nature.
+                    Furthermore, several
+                    romantic authors, such as Edgar Allan Poe and Nathaniel Hawthorne, based their writings on the
+                    supernatural/occult and human
+                    psychology. Romanticism tended to regard satire as something unworthy of serious attention, a
+                    prejudice still influential today.
+                    The Romantic movement in literature was preceded by the Enlightenment and succeeded by Realism. <br>
+                    <br>
+
+                    Some authors cite 16th-century poet Isabella di Morra as an early precursor of Romantic literature.
+                    Her lyrics covering
+                    themes of isolation and loneliness, which reflected the tragic events of her life, are considered
+                    "an impressive prefigurement
+                    of Romanticism",[43] differing from the Petrarchist fashion of the time based on the philosophy of
+                    love.</p>
+                <ul>
+                        <li class="card">
+                            <img src="Billy_Budd_Herman_Mellville.jpg">
+                                <h3>American Romanticism Literature</h3>
+                            <p> Considered for its highly positive depiction of American Romanticism, the novel Billy Bud iconicized the spirit of the movement 
+                                through its allegorical old-age conflict between Enlightment philosophies, characterized through the "evil" antagonist of the novel,
+                                and Romantic philosophies, characterized through the protagonist of the novel. 
+                            </p>
+                        </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Architecture">
+            <div>
+                <div>
+                    <h2>Architecture</h2>
+                    <p>Romantic architecture appeared in the late 18th century in a reaction against the rigid forms of
+                        neoclassical architecture.
+                        Romantic architecture reached its peak in the mid-19th century, and continued to appear until
+                        the end of the 19th century.
+                        It was designed to evoke an emotional reaction, either respect for tradition or nostalgia for a
+                        bucolic past. It was
+                        frequently inspired by the architecture of the Middle Ages, especially Gothic architecture, It
+                        was strongly influenced
+                        by romanticism in literature, particularly the historical novels of Victor Hugo and Walter
+                        Scott. It sometimes moved
+                        into the domain of eclecticism, with features assembled from different historic periods and
+                        regions of the world.</p>
+                </div>
+                <div>
+                    <img src="images/ciani-2.jpg">
+                </div>
+
+            </div>
+            <figure>
+                <img>
+            </figure>
+        </section>
+
+        <footer id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label>
+                        <span>Name</span>
+                        <input type="text">
+                    </label>
+
+                    <label>
+                        <span>Email</span>
+                        <input type="email">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Message</span>
+                        <textarea></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </footer>
+    </main>
+</body>
+
 </html>
